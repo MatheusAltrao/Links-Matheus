@@ -116,9 +116,11 @@ i:hover {
   position: absolute;
   z-index: 99;
   content: 'matheusaltrao2@gmail.com';
-  bottom: 30px;
+  font-size: 10px;
+  bottom: -20px;
   right: 0;
-  left: 0;
+  left: -50px;
+  background-color: #1a1a1a;
 }
 
 .icon,

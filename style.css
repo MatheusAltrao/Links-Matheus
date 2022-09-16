@@ -114,7 +114,7 @@ i {
 }
 
 i:hover {
-  filter: brightness(1.4);
+ filter: brightness(1.2);
 }
 
 
@@ -125,7 +125,7 @@ i {
 }
 
 .icon:hover {
-  transform: translateY(-8px);
+  filter: brightness(1.2);
 }
 
 .developer {

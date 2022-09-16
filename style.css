@@ -41,7 +41,7 @@ body {
 }
 
 .image {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .image img {
@@ -57,7 +57,7 @@ body {
 }
 
 .insta {
-  margin-bottom: 60px;
+  margin-bottom: 4rem;
 }
 
 .insta p {
@@ -65,11 +65,14 @@ body {
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 
-  margin-bottom: 68px;
+  gap: 1rem;
+
+  margin-bottom: 4rem;
 }
 
 button {
@@ -83,11 +86,13 @@ button {
 
   text-transform: uppercase;
 
-  height: 50px;
-  width: 320px;
+  height: 3rem;
+  width: 19rem;
 
   cursor: pointer;
   transition: all 0.3s ease;
+
+ 
 }
 
 button:hover {
@@ -99,9 +104,9 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
 
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 i {
@@ -109,22 +114,9 @@ i {
 }
 
 i:hover {
-  transform: translateY(-8px);
+  filter: brightness(1.4);
 }
 
-.email:hover::after {
-  position: absolute;
-  z-index: 99;
-  content: 'Clique para copiar o e-mail';
-
-  width: 10rem;
-
-  font-size: 10px;
-  bottom: -20px;
-  right: 0;
-  left: -50px;
-  background-color: #1a1a1a;
-}
 
 .icon,
 i {
@@ -146,10 +138,49 @@ i {
   font-weight: 700;
 
   display: block;
-  margin-left: 5px;
-  margin-bottom: 20px;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 input{
   display: none;
 }
+
+.emailalert{
+
+  position: fixed;
+  top: 1rem;
+
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transform: translateY(-500px);
+
+  background-color: #1a1a1a;
+  height: 10rem;
+  width: 18rem;
+
+  border: 2px solid var(--ciano);
+  border-radius: 1rem;
+
+  transition: all 0.5s ease-in;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.emailalert.show{
+
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(100%);
+}
+
+
+
+
+

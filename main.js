@@ -1,7 +1,9 @@
 function copyEmail() {
-  const email = 'matheusaltrao2@gmail.com'
+
+  const valueInput = document.getElementById('input-email')
+  const email = valueInput.value
 
   navigator.clipboard.writeText(email)
 
-  alert('o email ' + email + ' foi copiado')
+  console.log(email)
 }

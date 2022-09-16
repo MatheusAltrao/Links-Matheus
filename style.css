@@ -115,7 +115,10 @@ i:hover {
 .email:hover::after {
   position: absolute;
   z-index: 99;
-  content: 'matheusaltrao2@gmail.com';
+  content: 'Clique para copiar o e-mail';
+
+  width: 10rem;
+
   font-size: 10px;
   bottom: -20px;
   right: 0;
@@ -145,4 +148,8 @@ i {
   display: block;
   margin-left: 5px;
   margin-bottom: 20px;
+}
+
+input{
+  display: none;
 }
